@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6954ba6cb24f3f1489243a60a2b7a1b3, type: 3}
+  m_Name: Key
+  m_EditorClassIdentifier: 
+  itemName: DoorKey
+  itemPrefab: {fileID: 6998664435224215815, guid: dba23e7e37671224fac845cc507d46ad, type: 3}
+  itemMaterial: {fileID: 2100000, guid: 29759422bc94bc142a2b11019a2c82d3, type: 2}
+  keyName: DoorKey
