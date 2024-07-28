@@ -12,4 +12,5 @@ public class KeyClass : ItemClass
 
     public override ItemClass GetItem() { return this; }
     public override KeyClass GetKey() { return this; }
+    public override FoodClass GetFood() { return null; }
 }

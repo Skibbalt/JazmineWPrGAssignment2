@@ -15,4 +15,6 @@ MonoBehaviour:
   itemName: DoorKey
   itemPrefab: {fileID: 6998664435224215815, guid: dba23e7e37671224fac845cc507d46ad, type: 3}
   itemMaterial: {fileID: 2100000, guid: 29759422bc94bc142a2b11019a2c82d3, type: 2}
+  itemIcon: {fileID: 21300000, guid: 238d852b7b8894f42aa1ff5deb9a4bbd, type: 3}
+  itemText: Can be used to unlock doors
   keyName: DoorKey

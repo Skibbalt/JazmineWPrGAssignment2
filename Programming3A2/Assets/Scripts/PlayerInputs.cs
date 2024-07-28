@@ -7,22 +7,33 @@ using UnityEngine.InputSystem;
 public class PlayerInputs : MonoBehaviour
 {
     PlayerInput playerInput;
-    InputAction moveAction; 
-    // Start is called before the first frame update
+    InputAction moveAction;
+    public InventoryManager inventoryManager;
+
     void Start()
     {
-        playerInput = GetComponent<PlayerInput> ();
+        playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions.FindAction("Move");
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovePlayer();
     }
+
     void MovePlayer()
     {
         Vector2 direction = moveAction.ReadValue<Vector2>();
         transform.position += new Vector3(direction.x, 0, direction.y) * Time.deltaTime;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        ItemPickup itemPickup = other.GetComponent<ItemPickup>();
+        if (itemPickup != null)
+        {
+            inventoryManager.Add(itemPickup.item);
+            Destroy(other.gameObject);
+        }
     }
 }
